@@ -1,0 +1,6 @@
+[package]
+name = "ParityChallenge"
+version = "0.1.0"
+authors = ["Akram Eldamaty <akram_eldamaty@hotmail.com>"]
+
+[dependencies]
