@@ -1,6 +1,6 @@
 # ParityTechChallenge
 
-Program to convert an integer input into a string output. 
+Program to convert an integer number input into the english representation of that number as a string output. 
 Main Code can be found at ParityChallenge/src/main.rs
 
 Some Sample Outputs:
