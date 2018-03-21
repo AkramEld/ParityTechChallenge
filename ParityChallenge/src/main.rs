@@ -1,7 +1,7 @@
 use std::io;
 use std::f64;
 
-//--------------------------Functions for Program------------------------------------------//
+//--------------------------Helper Functions for Program------------------------------------------//
 fn onetoten(x: u64) {
 
     print!("{}", ones[(x) as usize]);
