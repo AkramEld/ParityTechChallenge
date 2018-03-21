@@ -50,19 +50,19 @@ fn thousand_plus(x:u64,y:u32)->u64{//thousands y=5     million y=8   billion=11 
         specialcase(z);
 
         if y==5 && z!=0{
-            print!(" thousand,", );
+            print!(" thousand,");
         }
         if y==8 && z!=0{
-            print!(" million, ", );
+            print!(" million, ");
         }
         if y==11 && z!=0{
-            print!(" billion, ", );
+            print!(" billion, ");
         }
         if y==14 && z!=0 {
-            print!(" trillion, ", );
+            print!(" trillion, ");
         }
         if y==17 && z!=0{
-            print!(" quadrillion, ", );
+            print!(" quadrillion, ");
         }
 
         return x - (x / (base.pow(y-2))) * (base.pow(y-2));
@@ -72,19 +72,19 @@ fn thousand_plus(x:u64,y:u32)->u64{//thousands y=5     million y=8   billion=11 
     hundredtothousand(x/base.pow(y-2));
     specialcase(((x -(x / base.pow(y)) * base.pow(y))-x%base.pow(y-2))/base.pow(y-2));
     if y==5 {
-        print!(" thousand ", );
+        print!(" thousand ");
     }
     if y==8 {
-        print!(" million ", );
+        print!(" million ");
     }
     if y==11 {
-        print!(" billion ", );
+        print!(" billion ");
     }
     if y==14 {
-        print!(" trillion ", );
+        print!(" trillion ");
     }
     if y==17 {
-        print!(" quadrillion ", );
+        print!(" quadrillion ");
     }
     if zero_check!=0{
         print!(",");
@@ -96,7 +96,7 @@ fn thousand_plus(x:u64,y:u32)->u64{//thousands y=5     million y=8   billion=11 
 
 fn quintillion(x:u64)-> u64{
     specialcase(x / 1000000000000000000);
-    print!(" quintillion, ");//8223372036854775807
+    print!(" quintillion, ");
     return x - ((x / 1000000000000000000) * 1000000000000000000);
 }
 
